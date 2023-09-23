@@ -1,9 +1,12 @@
 {
   "name": "react-pay-app",
+  "homepage": "https://iamjannis11.github.io/playclone-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -12,6 +15,7 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "aos": "^3.0.0-beta.6",
+    "gh-pages": "^6.0.0",
     "lottie-react": "^2.4.0",
     "magic.css": "^1.4.8",
     "react": "^18.2.0",
