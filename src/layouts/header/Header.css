@@ -1,0 +1,46 @@
+.hero-header {
+    margin-top: 5rem;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hero-header-text h1 {
+    font-size: var(--big-font);
+}
+
+.header-span {
+    color: var(--white-color);
+}
+
+.hero-header-text h5 {
+    font-size: var(--h5-font);
+    margin: 2rem 0;
+}
+
+.btn-hero {
+    margin: 0;
+}
+
+.hero-header-img img {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+    .hero-header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-header {
+        min-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero-header-text h5 {
+        margin: 1rem 0;
+    }
+
+}

@@ -1,0 +1,34 @@
+.feedback-container {
+    background-color: var(--bgwhite-color);
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feedback-container h5 {
+    font-size: var(--h5-font);
+    text-transform: uppercase;
+    color: var(--gray-color);
+}
+
+.feedback-container h3 {
+    font-size: var(--h3-font);
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 1020px ) {
+   .review-container {
+    grid-template-columns: 1fr;
+   }
+}

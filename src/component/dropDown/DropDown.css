@@ -1,0 +1,34 @@
+.promo-box {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem 0;
+}
+
+.promo-dropdown {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.promo-dropdown h5 {
+    font-size: var(--h5-font);
+    padding-bottom: 1rem;
+}
+
+.promo-box p {
+    font-size: var(--p-font);
+}
+
+.dropdown-icon {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+    .promo-box {
+        margin: 1rem 0;
+    }
+    
+    .promo-dropdown h5 {
+        padding-bottom: 0rem;
+    }
+}

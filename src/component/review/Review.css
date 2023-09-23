@@ -1,0 +1,60 @@
+
+.review-card-img {
+    width: 100%;
+}
+
+.review-card-img img {
+    aspect-ratio: 4/4;
+    border-radius: 60% 40% 72% 28% / 29% 30% 70% 71%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.review-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.review-card-text p {
+    font-size: var(--p-font);
+    line-height: 35px;
+    font-style: italic;
+    font-weight: 700px;
+}
+
+.artist-name {
+    gap: 1rem;
+}
+
+.artist-name h5 {
+    font-size: var(--h5-font);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 1020px) {
+    .review-card {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .review-card-img {
+        text-align: center;
+    }
+
+    .review-card-img img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .review-card {
+        margin: 1rem 0;
+    }
+
+    .review-card-text p {
+        line-height: 15px;
+    }
+}

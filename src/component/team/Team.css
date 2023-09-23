@@ -1,0 +1,42 @@
+.team-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--lightgray-color);
+    border-radius: 10px;
+
+    transition: .4s all;
+}
+
+.team-card:hover {
+    border: 1px solid var(--main-color);
+}
+
+.user-icon {
+    font-size: var(--icon-font);
+}
+
+.card-text h5 {
+    font-size: var(--h5-font);
+}
+
+.card-text p {
+    font-size: var(--p-font);
+    margin: .5rem 0;
+}
+
+.viewers {
+    gap: 1rem;
+}
+
+.user-img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.viewers p {
+    color: var(--gray-color);
+}

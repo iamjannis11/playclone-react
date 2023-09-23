@@ -1,0 +1,60 @@
+.section--padding {
+  padding: 4rem 6rem;
+}
+
+
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-size: var(--btn-font);
+  color: var(--black-color);
+  background-color: var(--main-color);
+  padding: 16px 32px;
+  border-radius: 2rem;
+  border: none;
+  margin: 0 1rem;
+
+  transition: .4s ease-out;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  transform: translate(5px, 5px);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color)
+}
+
+@media screen and (max-width: 1080px) {
+   .btn {
+     padding: 13px;
+   }
+}
+
+@media screen and (max-width: 520px) {
+  .section--padding {
+      padding: 3rem;
+    }
+
+  .btn {
+      padding: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+  .section--padding {
+      padding: 1rem;
+    }
+}

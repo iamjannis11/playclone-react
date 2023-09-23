@@ -1,0 +1,122 @@
+.campaign-container-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.campaign-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.campaign-container-left h4 {
+    font-size: var(--h4-font);
+    margin-top: 1rem;
+}
+
+.campaign-container-left p {
+    font-size: var(--p-font);
+}
+
+.campaign-img img {
+    width: 100%;
+}
+
+.campaign-footer p {
+    font-size: var(--p-font);
+    color: var(--lightgray-color);
+    text-align: center;
+}
+
+.campaign-container-right {
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.campaign-container-right h3 {
+    font-size: var(--h3-font);
+    color: var(--main-color);
+}
+
+.campaign-create {
+    margin-top: 2rem;
+}
+
+.campaign-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1rem 4rem 1rem;
+    background-color: var(--lightgray-color);
+    padding: 8rem 4rem;
+    border-radius: 5px;
+    border: 5px solid transparent;
+
+    transition: .4s;
+}
+
+.campaign-list {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.campaign-list ul li {
+    padding: 10px 0;
+    font-size: var(--p-font);
+}
+
+.campaign-btn .btn {
+   margin: 10px 0;
+}
+
+.campaign-box h4 {
+    font-size: var(--h4-font);
+}
+
+.campaign-box:hover {
+    border: 5px solid var(--hover-color);
+}
+
+.campaign-box p {
+   font-size: var(--p-font);
+}
+
+@media screen and (max-width: 1080px) {
+    .campaign-container-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .campaign-create {
+        flex-direction: column;
+    }
+
+    .campaign-box {
+        padding: 4rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .campaign-create {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .campaign-box {
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .campaign-box {
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+    }
+}

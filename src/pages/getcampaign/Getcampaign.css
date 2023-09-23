@@ -1,0 +1,116 @@
+.getcampaign-container {
+    background-color: var(--white-color);
+    width: 100%;
+    min-height: 100vh;
+
+    margin-top: 6rem;
+}
+
+.getcampaign-container h2 {
+    margin: 1rem 0;
+    font-size: var(--h2-font);
+    text-align: center;
+}
+
+.getcampaign-container form {
+    font-size: var(--h5-font);
+    width: 700px;
+    margin: auto;
+}
+
+form input, textarea {
+    font-size: var(--h5-font);
+    padding: .6rem 5rem .6rem .6rem;
+    border: 1px solid var(--black-color);
+    outline: 0;
+    border-radius: 5px;
+    margin-top: .8rem;
+}
+
+#country {
+    margin-top: .8rem;
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+}
+
+.input-row-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 1rem;
+}
+
+.input-column-box, .radio-box, .check-box {
+    padding: 1rem;
+}
+
+.input-column-box input, .form-btn, textarea {
+    width: 100%;
+}
+
+.form-btn {
+    font-size: var(--btn-font);
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+.form-btn:focus {
+    background-color: var(--hover-color);
+}
+
+footer {
+    font-size: var(--p-font);
+    color: var(--gray-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 880px) {
+    .getcampaign-container form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .input-row-box {
+        flex-direction: column;
+    }
+    
+    .input-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    form input, textarea {
+       margin-top: .4rem;
+    }
+
+    .input-box {
+        padding: .5rem;
+    }
+
+    .input-column-box, .radio-box, .check-box {
+        padding: .5rem;
+    }
+
+    .form-btn {
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    form input, textarea {
+        padding: .4rem 2.5rem .4rem .4rem;
+    }
+}

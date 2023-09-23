@@ -1,0 +1,172 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: var(--bg-color);
+
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+}
+
+.logo {
+    font-size: var(--logo-font);
+    color: var(--white-color);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.logo-text {
+    color: var(--main-color);
+}
+
+.navbar-smallscreen-links li:hover {
+    transform: translate(2px, 2px);
+}
+
+.navbar-login {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: var(--white-icon);
+    font-size: var(--icon-font);
+}
+
+.btn-icon {
+    fill: var(--black-icon);
+}
+
+/* Start of smallscreen css */
+.navbar-smallscreen {
+    display: none;
+}
+
+.navbar-smallscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
+    transition: .5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.navbar-smallscreen-overlay .overlay-icon {
+    font-size: var(--icon-font);
+    color: var(--main-color);
+    cursor: pointer;
+    margin: 2rem;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.navbar-smallscreen-links {
+    background-color: var(--gray-color);
+    padding: 2rem 0;
+}
+
+.navbar-smallscreen-links li{
+    margin: 2rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.navbar-smallscreen-links a {
+    color: var(--main-color);
+}
+
+/* Start of Hovering Links CSS */
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links-container:hover .dropdown-toggle {
+    transition: .4s ease-out;
+    position: absolute;
+    display: flex;
+}
+
+.navbar-title {
+    position: relative;
+    margin: 0 2rem;
+    font-size: var(--nav-font);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.navbar-title:hover {
+    transition: .4s;
+    color: var(--main-color);
+    transform: translate(2px, 2px);
+}
+
+.dropdown-toggle {
+    display: none;
+    position: relative;
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+
+.option-list {
+   padding: 2rem 3rem;
+}
+
+.option-list h4 {
+    font-size: var(--h4-font);
+    text-transform: uppercase;
+    color: var(--lightgray-color);
+    padding-bottom: 1rem;
+}
+
+.option-list-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+@media screen and (max-width: 1500px) {
+   .navbar-links {
+       display: none;
+   }
+
+   .navbar-smallscreen {
+       display: flex;
+   }
+
+   .navbar-smallscreen-links {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--bg-color);
+   }
+
+   .option-list h4 {
+       color: var(--lightgray-color);
+   }
+
+   .navbar-title {
+       color: var(--white-color);
+       padding: 1rem 0;
+       cursor: pointer;
+   }
+
+   .navbar-title:hover {
+       transition: .4s;
+       transform: translate(2px, 2px);
+   }
+}
+
+

@@ -1,0 +1,74 @@
+.signIn-container {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.signIn-box {
+    text-align: center;
+}
+
+.signIn-box h4 {
+    font-size: var(--h4-font);
+    color: var(--white-color);
+    margin: 1.5rem 0;
+}
+
+.signIn-email-box {
+    background-color: var(--bgwhite-color);
+    width: 100%;
+    padding: 3rem 5rem;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.signIn-email-box h5 {
+    font-size: var(--h5-font);
+    text-align: left;
+}
+
+.signIn-email-box input {
+    width: 100%;
+    font-size: var(--p-font);
+    padding: 1rem 5rem 1rem 1rem;
+    margin: 1rem 2rem 2rem 0;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.signIn-email-box input[type=email]:focus {
+   border: 1px solid var(--lightgray-color)
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--btn-font);
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--hover-color);
+    padding: .8rem 2rem;
+
+    transition: .4s ease-out;
+}
+
+.btn-box:hover {
+    background-color: var(--main-color);
+}
+
+.signIn-footer p {
+    font-size: var(--p-font);
+    color: var(--gray-color);
+
+    margin-top: 10rem;
+}

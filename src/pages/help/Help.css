@@ -1,0 +1,138 @@
+.help-container {
+    background-color: var(--white-color);
+    width: 100%;
+    min-height: 100vh;
+   
+}
+
+.help-searchbar {
+    background-color: var(--bg-color);
+    padding: 4rem 8rem;
+}
+
+.searchbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.selectlink {
+    font-size: var(--nav-font);
+    color: var(--white-color);
+}
+
+.selectlink a {
+    color: var(--main-color);
+    transition: .4s;
+}
+
+.selectlink a:hover {
+    color: var(--white-color);
+}
+
+.icon-help {
+    font-size: var(--icon-font);
+    color: var(--white-color);
+}
+
+.selectbox {
+    display: flex;
+    gap: .5rem;
+}
+
+.selectbox select {
+    border: 0;
+    outline: 0;
+    background-color: var(--bg-color);
+    font-size: var(--nav-font);
+    color: var(--white-color);
+}
+
+.searchbar {
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.searchbar h2 {
+    font-size: var(--h2-font);
+    color: var(--white-color);
+    padding: 2.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.searchbox-btn {
+    width: 80%;
+    color: var(--black-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.searchbox-icon {
+    position: absolute;
+    left: .8rem;
+    font-size: var(--icon-font);
+    cursor: pointer;
+}
+
+.searchbox-text {
+    width: 100%;
+    padding: 1.5rem 9rem 1.5rem 3.3rem;
+    font-size: var(--h4-font);
+    outline: 0;
+    border-radius: 10px;
+}
+
+.help-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 6rem;
+}
+
+.help-footer p {
+   font-size: var(--p-font);
+   color: var(--gray-color);
+   text-align: center;
+   padding: 3rem 0;
+}
+
+@media screen and (max-width: 820px) {
+    .help-searchbar, .help-box {
+        padding: 2rem 5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .help-searchbar, .help-box {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .selectbox {
+        display: none;
+    }
+
+    .searchbox-btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .searchbox-text {
+        padding: 1rem 0 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .selectlink {
+        font-size: 1rem;
+    }
+}

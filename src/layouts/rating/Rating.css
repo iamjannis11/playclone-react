@@ -1,0 +1,42 @@
+.rating-container {
+    background-color: var(--bgwhite-color);
+    text-align: center;
+}
+
+.rating-container h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 3rem;
+}
+
+.rating-hr {
+    width: 100%;
+}
+
+.dash-hr {
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    border: none;
+}
+
+.rating-icon {
+    width: 100%;
+    font-size: var(--icon-font);
+    color: var(--main-color);
+}
+
+.rating-box h4 {
+    font-size: var(--h4-font);
+    font-style: italic;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.carousel-slider {
+    width: 100%;
+}
+
+.carousel-card {
+    width: 80%;
+    margin: auto;
+}

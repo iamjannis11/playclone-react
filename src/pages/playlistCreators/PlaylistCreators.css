@@ -1,0 +1,17 @@
+#playlist-header {
+    background-color: antiquewhite;
+}
+
+.playlist-img {
+    background-color: var(--bg-color);
+}
+
+.playlist-img img {
+    box-shadow: 10px 5px 5px var(--main-color);
+}
+
+@media screen and (max-width: 1020px) {
+    .playlist-img img {
+        width: 100%;
+    }
+}

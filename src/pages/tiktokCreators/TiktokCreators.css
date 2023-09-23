@@ -1,0 +1,43 @@
+.tiktok-creators-header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fffdd0d7;
+    text-align: center;
+
+    flex-direction: column;
+}
+
+.tiktok-creators-header h3 {
+    font-size: var(--h3-font);
+    color: var(--gray-color);
+    text-transform: uppercase;
+}
+
+.tiktok-creators-header h1 {
+    font-size: var(--big-font);
+    margin: 2rem 0;
+}
+
+.tiktok-creators-header h4 {
+    font-size: var(--h4-font);
+}
+
+.creators-btn {
+    margin: 1.5rem 0;
+}
+
+.payouts-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 880px) {
+    .payouts-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+}
