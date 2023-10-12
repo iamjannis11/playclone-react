@@ -21,7 +21,7 @@ const DropDown = ({ setUp, punchLine }: getType) => {
         <h5>{setUp}</h5>
 
         <RiArrowDropDownLine
-          className="icon dropdown-icon"
+          style={{ fontSize: "var(--icon-font)" }}
           onClick={toggleShown}
         />
       </div>

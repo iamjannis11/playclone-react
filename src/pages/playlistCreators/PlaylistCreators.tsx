@@ -29,7 +29,7 @@ const PlaylistCreators = () => {
           Apply Now <BiRightArrowAlt className="icon btn-icon" />
         </button>
       </div>
-      <div className="playlist-img flex--center section--padding roll-in-left">
+      <div className="playlist-img flex--center section--padding">
         <img src={images.playlist1} />
       </div>
       <Service

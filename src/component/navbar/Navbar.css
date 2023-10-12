@@ -33,12 +33,12 @@
 }
 
 .icon {
-    color: var(--white-icon);
+    color: var(--white-color);
     font-size: var(--icon-font);
 }
 
 .btn-icon {
-    fill: var(--black-icon);
+    fill: var(--black-color);
 }
 
 /* Start of smallscreen css */
